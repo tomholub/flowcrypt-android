@@ -457,7 +457,7 @@ dependencies {
   implementation("com.squareup.retrofit2:retrofit:2.11.0")
   implementation("com.squareup.retrofit2:converter-gson:2.11.0")
   implementation("com.squareup.retrofit2:converter-scalars:2.11.0")
-  implementation("com.squareup.okio:okio:3.9.1")
+  implementation("com.squareup.okio:okio:3.10.2")
   implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 
   implementation("com.github.bumptech.glide:glide:4.16.0")
