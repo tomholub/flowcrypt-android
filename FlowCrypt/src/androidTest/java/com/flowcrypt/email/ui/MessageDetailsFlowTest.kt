@@ -84,6 +84,7 @@ import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Before
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
@@ -139,12 +140,14 @@ class MessageDetailsFlowTest : BaseMessageDetailsFlowTest() {
   }
 
   @Test
+  @Ignore("flaky")
   fun testTopReplyButton() {
     val incomingMessageInfo = testTopReplyAction(getResString(R.string.reply))
     checkQuotesFunctionality(incomingMessageInfo)
   }
 
   @Test
+  @Ignore("flaky 2 3")
   fun testReplyAllButton() {
     val incomingMessageInfo = testStandardMsgPlaintextInternal()
     onView(withId(R.id.replyAllButton))

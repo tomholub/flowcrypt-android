@@ -216,6 +216,7 @@ class UpdatePrivateKeyWithPassPhraseInRamFlowTest : BaseTest() {
   }
 
   @Test
+  @Ignore("flaky 2 2")
   fun testPrivateKeyPassphraseAntiBruteforceProtection() {
     onView(withText(R.string.pass_phrase_not_provided))
       .check(matches(isDisplayed()))

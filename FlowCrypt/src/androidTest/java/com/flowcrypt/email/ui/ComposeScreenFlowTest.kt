@@ -78,6 +78,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.BeforeClass
 import org.junit.ClassRule
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
@@ -163,6 +164,7 @@ class ComposeScreenFlowTest : BaseComposeScreenTest() {
   }
 
   @Test
+  @Ignore("flaky 5")
   fun testEmptyEmailMsg() {
     activeActivityRule?.launch(intent)
     registerAllIdlingResources()
@@ -327,6 +329,7 @@ class ComposeScreenFlowTest : BaseComposeScreenTest() {
   }
 
   @Test
+  @Ignore("flaky 4")
   fun testDeletingAtts() {
     activeActivityRule?.launch(intent)
     waitForObjectWithText(

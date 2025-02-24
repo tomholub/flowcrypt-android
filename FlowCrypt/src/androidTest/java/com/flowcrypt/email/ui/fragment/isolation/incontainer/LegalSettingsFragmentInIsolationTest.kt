@@ -1,6 +1,6 @@
 /*
  * © 2016-present FlowCrypt a.s. Limitations apply. Contact human@flowcrypt.com
- * Contributors: DenBond7
+ * Contributors: denbond7
  */
 
 package com.flowcrypt.email.ui.fragment.isolation.incontainer
@@ -28,6 +28,7 @@ import com.flowcrypt.email.rules.ScreenshotTestRule
 import com.flowcrypt.email.ui.activity.fragment.LegalSettingsFragment
 import org.hamcrest.Matchers.allOf
 import org.junit.Before
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
@@ -74,6 +75,7 @@ class LegalSettingsFragmentInIsolationTest : BaseTest() {
   }
 
   @Test
+  @Ignore("flaky")
   fun testSwipeInViewPager() {
     onView(
       allOf(

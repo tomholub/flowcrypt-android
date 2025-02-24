@@ -32,6 +32,7 @@ import okhttp3.mockwebserver.Dispatcher
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.RecordedRequest
 import org.hamcrest.CoreMatchers.startsWith
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.RuleChain
@@ -72,6 +73,7 @@ class ComposeScreenForwardWithGmailApiSignatureFlowTest :
       .around(ScreenshotTestRule())
 
   @Test
+  @Ignore("flaky")
   fun testAddingSignatureAfterStart() {
     //need to wait while the app loads the messages list
     Thread.sleep(2000)

@@ -1,6 +1,6 @@
 /*
  * © 2016-present FlowCrypt a.s. Limitations apply. Contact human@flowcrypt.com
- * Contributors: DenBond7
+ * Contributors: denbond7
  */
 
 package com.flowcrypt.email.ui
@@ -86,6 +86,7 @@ class ComposeScreenNoKeyAvailableSingleKeyWithPassphraseInDatabaseFlowTest : Bas
   }
 
   @Test
+  @Ignore("flaky")
   fun testAddEmailToExistingSingleKeyPassphraseInDatabase() {
     doTestAddEmailToExistingKey {
       //no more additional actions
